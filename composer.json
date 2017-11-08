@@ -12,6 +12,7 @@
 	"require": {
 		"php": ">=7.1",
 		"nette/reflection": "^2.4",
+		"nette/utils": "^2.4",
 		"nette/di": "^2.4"
 	},
 	"require-dev": {
