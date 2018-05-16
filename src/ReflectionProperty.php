@@ -140,6 +140,14 @@ class ReflectionProperty
 	/**
 	 * @return bool
 	 */
+	public function isBoolean(): bool
+	{
+		return $this->type === 'bool';
+	}
+
+	/**
+	 * @return bool
+	 */
 	public function isString(): bool
 	{
 		return $this->type === 'string';
@@ -166,7 +174,7 @@ class ReflectionProperty
 	 * @param string $name
 	 * @return \Nette\Reflection\IAnnotation
 	 */
-	public function getAnnotation(string $name): \Nette\Reflection\IAnnotation
+	public function getAnnotation(string $name)
 	{
 		return $this->property->getAnnotation($name);
 	}
